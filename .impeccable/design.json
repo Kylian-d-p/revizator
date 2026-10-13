@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T13:14:11.843Z",
+  "title": "Design System: Revizator",
+  "extensions": {
+    "colorMeta": {
+      "papier": {
+        "role": "neutral",
+        "displayName": "Papier",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(36% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "papier-2": {
+        "role": "neutral",
+        "displayName": "Papier gris",
+        "canonical": "#f5f5f7",
+        "oklch": "oklch(97.1% 0.003 286.4)",
+        "tonalRamp": [
+          "oklch(15% 0.003 286.4)",
+          "oklch(25% 0.003 286.4)",
+          "oklch(36% 0.003 286.4)",
+          "oklch(48% 0.003 286.4)",
+          "oklch(60% 0.003 286.4)",
+          "oklch(72% 0.003 286.4)",
+          "oklch(84% 0.003 286.4)",
+          "oklch(95% 0.003 286.4)"
+        ]
+      },
+      "encre": {
+        "role": "neutral",
+        "displayName": "Encre",
+        "canonical": "#16161d",
+        "oklch": "oklch(20.3% 0.014 285.1)",
+        "tonalRamp": [
+          "oklch(15% 0.014 285.1)",
+          "oklch(25% 0.014 285.1)",
+          "oklch(36% 0.014 285.1)",
+          "oklch(48% 0.014 285.1)",
+          "oklch(60% 0.014 285.1)",
+          "oklch(72% 0.014 285.1)",
+          "oklch(84% 0.014 285.1)",
+          "oklch(95% 0.014 285.1)"
+        ]
+      },
+      "encre-2": {
+        "role": "neutral",
+        "displayName": "Encre secondaire",
+        "canonical": "#4a4a57",
+        "oklch": "oklch(41.4% 0.022 285.4)",
+        "tonalRamp": [
+          "oklch(15% 0.022 285.4)",
+          "oklch(25% 0.022 285.4)",
+          "oklch(36% 0.022 285.4)",
+          "oklch(48% 0.022 285.4)",
+          "oklch(60% 0.022 285.4)",
+          "oklch(72% 0.022 285.4)",
+          "oklch(84% 0.022 285.4)",
+          "oklch(95% 0.022 285.4)"
+        ]
+      },
+      "encre-3": {
+        "role": "neutral",
+        "displayName": "Encre tertiaire",
+        "canonical": "#6b6b78",
+        "oklch": "oklch(53.2% 0.02 285.7)",
+        "tonalRamp": [
+          "oklch(15% 0.02 285.7)",
+          "oklch(25% 0.02 285.7)",
+          "oklch(36% 0.02 285.7)",
+          "oklch(48% 0.02 285.7)",
+          "oklch(60% 0.02 285.7)",
+          "oklch(72% 0.02 285.7)",
+          "oklch(84% 0.02 285.7)",
+          "oklch(95% 0.02 285.7)"
+        ]
+      },
+      "filet": {
+        "role": "neutral",
+        "displayName": "Filet",
+        "canonical": "#16161d",
+        "oklch": "oklch(20.3% 0.014 285.1)",
+        "tonalRamp": [
+          "oklch(15% 0.014 285.1)",
+          "oklch(25% 0.014 285.1)",
+          "oklch(36% 0.014 285.1)",
+          "oklch(48% 0.014 285.1)",
+          "oklch(60% 0.014 285.1)",
+          "oklch(72% 0.014 285.1)",
+          "oklch(84% 0.014 285.1)",
+          "oklch(95% 0.014 285.1)"
+        ]
+      },
+      "filet-doux": {
+        "role": "neutral",
+        "displayName": "Filet doux",
+        "canonical": "#dcdce2",
+        "oklch": "oklch(89.6% 0.008 286.2)",
+        "tonalRamp": [
+          "oklch(15% 0.008 286.2)",
+          "oklch(25% 0.008 286.2)",
+          "oklch(36% 0.008 286.2)",
+          "oklch(48% 0.008 286.2)",
+          "oklch(60% 0.008 286.2)",
+          "oklch(72% 0.008 286.2)",
+          "oklch(84% 0.008 286.2)",
+          "oklch(95% 0.008 286.2)"
+        ]
+      },
+      "bordure-champ": {
+        "role": "neutral",
+        "displayName": "Bordure de champ",
+        "canonical": "#8a8a96",
+        "oklch": "oklch(63.7% 0.018 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.018 285.9)",
+          "oklch(25% 0.018 285.9)",
+          "oklch(36% 0.018 285.9)",
+          "oklch(48% 0.018 285.9)",
+          "oklch(60% 0.018 285.9)",
+          "oklch(72% 0.018 285.9)",
+          "oklch(84% 0.018 285.9)",
+          "oklch(95% 0.018 285.9)"
+        ]
+      },
+      "essentiel": {
+        "role": "primary",
+        "displayName": "Cyan Savoir",
+        "canonical": "#00a3e0",
+        "oklch": "oklch(67.5% 0.142 234.3)",
+        "tonalRamp": [
+          "oklch(15% 0.142 234.3)",
+          "oklch(25% 0.142 234.3)",
+          "oklch(36% 0.142 234.3)",
+          "oklch(48% 0.142 234.3)",
+          "oklch(60% 0.142 234.3)",
+          "oklch(72% 0.142 234.3)",
+          "oklch(84% 0.142 234.3)",
+          "oklch(95% 0.142 234.3)"
+        ]
+      },
+      "essentiel-pale": {
+        "role": "primary",
+        "displayName": "Cyan Savoir pâle",
+        "canonical": "#e6f6fc",
+        "oklch": "oklch(96.3% 0.019 222.2)",
+        "tonalRamp": [
+          "oklch(15% 0.019 222.2)",
+          "oklch(25% 0.019 222.2)",
+          "oklch(36% 0.019 222.2)",
+          "oklch(48% 0.019 222.2)",
+          "oklch(60% 0.019 222.2)",
+          "oklch(72% 0.019 222.2)",
+          "oklch(84% 0.019 222.2)",
+          "oklch(95% 0.019 222.2)"
+        ]
+      },
+      "essentiel-fonce": {
+        "role": "primary",
+        "displayName": "Cyan Savoir foncé",
+        "canonical": "#0074a6",
+        "oklch": "oklch(53% 0.116 237.2)",
+        "tonalRamp": [
+          "oklch(15% 0.116 237.2)",
+          "oklch(25% 0.116 237.2)",
+          "oklch(36% 0.116 237.2)",
+          "oklch(48% 0.116 237.2)",
+          "oklch(60% 0.116 237.2)",
+          "oklch(72% 0.116 237.2)",
+          "oklch(84% 0.116 237.2)",
+          "oklch(95% 0.116 237.2)"
+        ]
+      },
+      "teste": {
+        "role": "secondary",
+        "displayName": "Magenta Auto-test",
+        "canonical": "#e5007d",
+        "oklch": "oklch(59.8% 0.243 358.8)",
+        "tonalRamp": [
+          "oklch(15% 0.243 358.8)",
+          "oklch(25% 0.243 358.8)",
+          "oklch(36% 0.243 358.8)",
+          "oklch(48% 0.243 358.8)",
+          "oklch(60% 0.243 358.8)",
+          "oklch(72% 0.243 358.8)",
+          "oklch(84% 0.243 358.8)",
+          "oklch(95% 0.243 358.8)"
+        ]
+      },
+      "teste-pale": {
+        "role": "secondary",
+        "displayName": "Magenta pâle",
+        "canonical": "#fde7f2",
+        "oklch": "oklch(94.9% 0.028 345.9)",
+        "tonalRamp": [
+          "oklch(15% 0.028 345.9)",
+          "oklch(25% 0.028 345.9)",
+          "oklch(36% 0.028 345.9)",
+          "oklch(48% 0.028 345.9)",
+          "oklch(60% 0.028 345.9)",
+          "oklch(72% 0.028 345.9)",
+          "oklch(84% 0.028 345.9)",
+          "oklch(95% 0.028 345.9)"
+        ]
+      },
+      "teste-fonce": {
+        "role": "secondary",
+        "displayName": "Magenta foncé",
+        "canonical": "#b00060",
+        "oklch": "oklch(49.2% 0.2 358.2)",
+        "tonalRamp": [
+          "oklch(15% 0.2 358.2)",
+          "oklch(25% 0.2 358.2)",
+          "oklch(36% 0.2 358.2)",
+          "oklch(48% 0.2 358.2)",
+          "oklch(60% 0.2 358.2)",
+          "oklch(72% 0.2 358.2)",
+          "oklch(84% 0.2 358.2)",
+          "oklch(95% 0.2 358.2)"
+        ]
+      },
+      "surligneur": {
+        "role": "tertiary",
+        "displayName": "Jaune Surligneur",
+        "canonical": "#ffe500",
+        "oklch": "oklch(91.5% 0.191 101)",
+        "tonalRamp": [
+          "oklch(15% 0.191 101)",
+          "oklch(25% 0.191 101)",
+          "oklch(36% 0.191 101)",
+          "oklch(48% 0.191 101)",
+          "oklch(60% 0.191 101)",
+          "oklch(72% 0.191 101)",
+          "oklch(84% 0.191 101)",
+          "oklch(95% 0.191 101)"
+        ]
+      },
+      "surligneur-pale": {
+        "role": "tertiary",
+        "displayName": "Jaune Surligneur pâle",
+        "canonical": "#fff4a3",
+        "oklch": "oklch(95.8% 0.102 101.5)",
+        "tonalRamp": [
+          "oklch(15% 0.102 101.5)",
+          "oklch(25% 0.102 101.5)",
+          "oklch(36% 0.102 101.5)",
+          "oklch(48% 0.102 101.5)",
+          "oklch(60% 0.102 101.5)",
+          "oklch(72% 0.102 101.5)",
+          "oklch(84% 0.102 101.5)",
+          "oklch(95% 0.102 101.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titre de page, Archivo élargi extra-gras."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titre d'une fiche."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Titres d'état, pastilles et tuiles numérotées."
+      },
+      "bandeau": {
+        "displayName": "Bandeau",
+        "purpose": "Titre de rubrique en Archivo condensé capitales, dans un aplat."
+      },
+      "lecture": {
+        "displayName": "Lecture",
+        "purpose": "Texte de « L'essentiel », 65ch max."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texte courant et corrigés."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Libellés de champ, boutons, questions."
+      },
+      "chiffres": {
+        "displayName": "Chiffres",
+        "purpose": "Nombres d'interface en Archivo tabulaire."
+      }
+    },
+    "shadows": [
+      {
+        "name": "soulevement-principal",
+        "value": "0 10px 20px -10px rgb(22 22 29 / 0.6)",
+        "purpose": "Survol du bouton principal, avec translateY(-2px). Seule ombre du système."
+      },
+      {
+        "name": "halo-focus",
+        "value": "0 0 0 6px var(--surligneur)",
+        "purpose": "Focus clavier des boutons et liens, sous outline 2px solid var(--encre) décalé de 2px."
+      },
+      {
+        "name": "contour-champ-actif",
+        "value": "0 0 0 1px var(--encre)",
+        "purpose": "Focus des champs : bordure passée en encre et épaissie d’1px, sans outline ni halo jaune."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-sortie",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Courbe de sortie de tous les mouvements."
+      },
+      {
+        "name": "etat-couleur",
+        "value": "150ms ease",
+        "purpose": "Changements de fond et de couleur (boutons, champs)."
+      },
+      {
+        "name": "soulevement",
+        "value": "220ms var(--ease-sortie)",
+        "purpose": "Soulèvement du bouton principal."
+      },
+      {
+        "name": "barre-nav",
+        "value": "300ms var(--ease-sortie)",
+        "purpose": "Barre de navigation active, marque CMJN, jauge."
+      },
+      {
+        "name": "surlignage",
+        "value": "380ms var(--ease-sortie)",
+        "purpose": "Le surligneur se dessine sous un titre au survol."
+      },
+      {
+        "name": "pivot-corrige",
+        "value": "700ms var(--ease-sortie)",
+        "purpose": "Le corrigé tête-bêche pivote de 180° au geste."
+      },
+      {
+        "name": "respiration",
+        "value": "1.6s ease-in-out infinite (opacité 0.45 à 1)",
+        "purpose": "Lignes de squelette pendant la génération ; coupée en mouvement réduit."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "400px"
+      },
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Action principale : aplat encre, soulèvement au survol.",
+      "html": "<button class=\"ds-bouton\">Générer la fiche</button>",
+      "css": ".ds-bouton{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;padding:0 1.25rem;border:2px solid var(--encre,#16161d);border-radius:0;background:var(--encre,#16161d);color:var(--papier,#fff);font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:1rem;font-weight:700;line-height:1.2;cursor:pointer;transition:transform 220ms cubic-bezier(.16,1,.3,1),box-shadow 220ms cubic-bezier(.16,1,.3,1),background-color 150ms ease,color 150ms ease}.ds-bouton:hover{transform:translateY(-2px);box-shadow:0 10px 20px -10px rgb(22 22 29 / .6)}.ds-bouton:active{transform:translateY(0);box-shadow:none}.ds-bouton:focus-visible{outline:2px solid var(--encre,#16161d);outline-offset:2px;box-shadow:0 0 0 6px var(--surligneur,#ffe500)}"
+    },
+    {
+      "name": "Bouton secondaire",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Action secondaire : papier cerclé d'encre, surligné en jaune au survol.",
+      "html": "<button class=\"ds-bouton-sec\">Ouvrir la fiche <svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-bouton-sec{display:inline-flex;align-items:center;gap:.5rem;min-height:3rem;padding:0 1.25rem;border:2px solid var(--encre,#16161d);border-radius:0;background:var(--papier,#fff);color:var(--encre,#16161d);font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:1rem;font-weight:700;line-height:1.2;cursor:pointer;transition:background-color 150ms ease}.ds-bouton-sec:hover{background:var(--surligneur,#ffe500)}.ds-bouton-sec:focus-visible{outline:2px solid var(--encre,#16161d);outline-offset:2px;box-shadow:0 0 0 6px var(--surligneur,#ffe500)}"
+    },
+    {
+      "name": "Champ",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Champ de saisie à coins droits, focus en halo jaune.",
+      "html": "<input class=\"ds-champ\" placeholder=\"Ex. : Introduction au cloud computing\" />",
+      "css": ".ds-champ{display:block;width:100%;border:1.5px solid var(--bordure-champ,#8a8a96);border-radius:0;background:var(--papier,#fff);padding:.75rem .9rem;font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55;color:var(--encre,#16161d);transition:border-color 150ms ease,box-shadow 200ms cubic-bezier(.16,1,.3,1)}.ds-champ::placeholder{color:var(--encre-3,#6b6b78)}.ds-champ:hover{border-color:var(--encre-2,#4a4a57)}.ds-champ:focus-visible{outline:none;border-color:var(--encre,#16161d);box-shadow:0 0 0 1px var(--encre,#16161d)}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "En-tête : marque CMJN et deux liens, barre d'encre sous le lien actif.",
+      "html": "<header class=\"ds-entete\"><a class=\"ds-marque\" href=\"#\"><span class=\"ds-mot\">Revizator</span><span class=\"ds-cmjn\"><i style=\"background:#00a3e0\"></i><i style=\"background:#e5007d\"></i><i style=\"background:#ffe500\"></i><i style=\"background:#16161d\"></i></span></a><nav class=\"ds-nav\"><a class=\"ds-lien ds-actif\" href=\"#\">Nouvelle fiche</a><a class=\"ds-lien\" href=\"#\">Mes fiches</a></nav></header>",
+      "css": ".ds-entete{display:flex;align-items:center;justify-content:space-between;height:4rem;padding:0 2rem;border-bottom:2px solid var(--filet,#16161d);background:var(--papier,#fff)}.ds-marque{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--encre,#16161d)}.ds-mot{font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-variation-settings:'wdth' 112;font-weight:800;font-size:1.5rem;letter-spacing:-.025em}.ds-cmjn{display:flex}.ds-cmjn i{display:block;width:10px;height:10px;transition:transform 300ms cubic-bezier(.16,1,.3,1)}.ds-cmjn i:nth-child(2){transition-delay:40ms}.ds-cmjn i:nth-child(3){transition-delay:80ms}.ds-cmjn i:nth-child(4){transition-delay:120ms}.ds-marque:hover .ds-cmjn i{transform:translateY(-4px)}.ds-nav{display:flex;gap:.5rem}.ds-lien{position:relative;display:block;padding:.5rem .75rem;font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:.95rem;font-weight:600;color:var(--encre-2,#4a4a57);text-decoration:none}.ds-lien:hover,.ds-actif{color:var(--encre,#16161d)}.ds-lien::after{content:'';position:absolute;left:.75rem;right:.75rem;bottom:-14px;height:4px;background:var(--encre,#16161d);transform:scaleX(0);transition:transform 300ms cubic-bezier(.16,1,.3,1)}.ds-actif::after{transform:scaleX(1)}.ds-lien:focus-visible,.ds-marque:focus-visible{outline:2px solid var(--encre,#16161d);outline-offset:2px;box-shadow:0 0 0 6px var(--surligneur,#ffe500)}"
+    },
+    {
+      "name": "Étiquette de score",
+      "kind": "chip",
+      "refersTo": "etiquette-score",
+      "description": "Score d'auto-évaluation dans le sommaire.",
+      "html": "<span class=\"ds-score\">2/3</span>",
+      "css": ".ds-score{display:inline-block;background:var(--teste-pale,#fde7f2);color:var(--teste-fonce,#b00060);padding:.125rem .5rem;border-radius:0;font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:.8125rem;font-weight:700;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Rubrique L'essentiel",
+      "kind": "card",
+      "refersTo": "bandeau-essentiel",
+      "description": "Bandeau cyan condensé capitales, corps cyan pâle, puces carrées, termes clés surlignés.",
+      "html": "<section class=\"ds-essentiel\"><div class=\"ds-bandeau\"><h2>L'essentiel</h2><span>212 mots</span></div><div class=\"ds-corps\"><p>Le cloud fournit des ressources <strong class=\"ds-surligne\">à la demande</strong>, facturées à l'usage.</p><ul><li>IaaS : machines virtuelles</li><li>PaaS : plateformes d'exécution</li></ul></div></section>",
+      "css": ".ds-bandeau{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--essentiel,#00a3e0);color:var(--encre,#16161d);padding:.75rem 1.75rem}.ds-bandeau h2{margin:0;font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-variation-settings:'wdth' 72;font-weight:800;font-size:1.125rem;letter-spacing:.06em;line-height:1.2;text-transform:uppercase}.ds-bandeau span{font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-size:.875rem;font-weight:600;font-variant-numeric:tabular-nums}.ds-corps{background:var(--essentiel-pale,#e6f6fc);color:var(--encre,#16161d);padding:1.75rem;font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:1.125rem;line-height:1.7}.ds-corps p,.ds-corps ul{max-width:65ch;margin:0 0 1.25rem}.ds-corps ul{list-style:none;padding:0}.ds-corps li{position:relative;padding-left:1.5rem;margin-bottom:.625rem}.ds-corps li::before{content:'';position:absolute;left:.15rem;top:.62em;width:.5rem;height:.5rem;background:var(--essentiel,#00a3e0)}.ds-surligne{background-image:linear-gradient(transparent 50%,var(--surligneur-pale,#fff4a3) 50%,var(--surligneur-pale,#fff4a3) 94%,transparent 94%);-webkit-box-decoration-break:clone;box-decoration-break:clone}"
+    },
+    {
+      "name": "Question Je me teste",
+      "kind": "custom",
+      "refersTo": "pastille-question",
+      "description": "Pastille magenta, question, corrigé tête-bêche qui pivote au geste.",
+      "html": "<div class=\"ds-question\"><span class=\"ds-pastille\">1</span><div><h3>Qu'est-ce que l'élasticité ?</h3><p class=\"ds-corrige\">La capacité à ajuster les ressources à la charge.</p><button class=\"ds-retourner\">Retourner le corrigé</button></div></div>",
+      "css": ".ds-question{display:flex;gap:1rem;padding:1.5rem;border:2px solid var(--teste,#e5007d);background:var(--papier,#fff);font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;color:var(--encre,#16161d)}.ds-pastille{display:flex;flex-shrink:0;align-items:center;justify-content:center;width:2.25rem;height:2.25rem;background:var(--teste,#e5007d);color:var(--papier,#fff);font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-variation-settings:'wdth' 112;font-weight:800;font-size:1.125rem}.ds-question h3{margin:.25rem 0 1rem;font-size:1.0625rem;font-weight:700;line-height:1.375}.ds-corrige{margin:0;padding-top:1rem;border-top:1.5px dashed var(--bordure-champ,#8a8a96);color:var(--encre-3,#6b6b78);transform:rotate(180deg);transition:transform 700ms cubic-bezier(.16,1,.3,1),color 400ms ease}.ds-question:hover .ds-corrige{transform:rotate(0deg);color:var(--encre,#16161d)}.ds-retourner{margin-top:1rem;display:inline-flex;align-items:center;min-height:2.5rem;padding:0 .875rem;border:2px solid var(--encre,#16161d);border-radius:0;background:var(--papier,#fff);color:var(--encre,#16161d);font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:background-color 150ms ease}.ds-retourner:hover{background:var(--surligneur,#ffe500)}.ds-retourner:focus-visible{outline:2px solid var(--encre,#16161d);outline-offset:2px;box-shadow:0 0 0 6px var(--surligneur,#ffe500)}"
+    },
+    {
+      "name": "Ligne de sommaire",
+      "kind": "custom",
+      "refersTo": "tuile-numero",
+      "description": "Tuile numérotée cyan, titre surligné au survol, points de conduite jusqu'à la date.",
+      "html": "<a class=\"ds-ligne\" href=\"#\"><span class=\"ds-tuile\">7</span><span class=\"ds-titre\"><span class=\"ds-surligne-survol\">Virtualisation et conteneurs</span></span><span class=\"ds-points\"></span><span class=\"ds-date\">12 oct.</span></a>",
+      "css": ".ds-ligne{display:grid;grid-template-columns:3rem auto 1fr auto;align-items:center;gap:1.25rem;padding:1rem 0;border-bottom:1px solid var(--filet-doux,#dcdce2);text-decoration:none;color:var(--encre,#16161d);font-family:'Atkinson Hyperlegible Next',ui-sans-serif,system-ui,sans-serif}.ds-tuile{display:flex;align-items:center;justify-content:center;width:3rem;height:3rem;background:var(--essentiel,#00a3e0);color:var(--encre,#16161d);font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-variation-settings:'wdth' 112;font-weight:800;font-size:1.125rem;transition:background-color 200ms,color 200ms}.ds-ligne:hover .ds-tuile{background:var(--encre,#16161d);color:var(--papier,#fff)}.ds-titre{font-size:1.125rem;font-weight:600}.ds-surligne-survol{background-image:linear-gradient(transparent 52%,var(--surligneur,#ffe500) 52%,var(--surligneur,#ffe500) 92%,transparent 92%);background-repeat:no-repeat;background-size:0% 100%;transition:background-size 380ms cubic-bezier(.16,1,.3,1)}.ds-ligne:hover .ds-surligne-survol,.ds-ligne:focus-visible .ds-surligne-survol{background-size:100% 100%}.ds-points{height:1em;background-image:radial-gradient(circle,var(--encre-3,#6b6b78) 1px,transparent 1.4px);background-size:8px 4px;background-repeat:repeat-x;background-position:left bottom .42em}.ds-date{font-family:Archivo,'Atkinson Hyperlegible Next',ui-sans-serif,sans-serif;font-size:.875rem;font-variant-numeric:tabular-nums;color:var(--encre-2,#4a4a57)}.ds-ligne:focus-visible{outline:2px solid var(--encre,#16161d);outline-offset:2px;box-shadow:0 0 0 6px var(--surligneur,#ffe500)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le cahier de révision parascolaire",
+    "overview": "Revizator s'imprime plutôt qu'il ne s'affiche. Chaque écran est une page de cahier de révision : papier blanc, encre noire, filets noirs et trois encres de process (cyan, magenta, jaune) posées en aplats francs. La fiche se lit comme une double page : à gauche « L'essentiel » sur fond cyan pâle, à droite « Je me teste » encadré de magenta, avec des corrigés imprimés tête-bêche que l'on retourne d'un geste.\n\nLa densité est celle d'un manuel : colonnes larges, texte de lecture généreux (jusqu'à 18 px, interligne 1,7, 65 caractères), rubriques annoncées par des bandeaux condensés en capitales. La couleur ne décore jamais : chaque encre a un seul rôle, ce qui permet de savoir où l'on est dans la fiche sans lire un mot. Tout est à coins droits, sans ombre portée au repos ; la profondeur vient des aplats et des filets, comme sur une page imprimée.\n\nLe monde refuse explicitement la carte blanche arrondie à accent indigo, standard des applications d'étude, et le look « template IA ».",
+    "keyCharacteristics": [
+      "Papier blanc, encre noire, trois encres quadri à rôle unique.",
+      "Rubriques en aplats avec bandeau Archivo condensé en capitales.",
+      "Titres Archivo élargi extra-gras ; tout ce qui se lit en Atkinson Hyperlegible Next.",
+      "Coins droits partout, filets noirs de 2 px pour structurer.",
+      "Surligneur jaune pour la sélection, les termes clés, le focus des boutons et liens, et les signaux d'état.",
+      "Corrigé tête-bêche qui pivote de 180° au geste, et reste à l'envers à l'impression."
+    ],
+    "rules": [
+      {
+        "name": "The Une Encre, Un Rôle Rule",
+        "body": "Cyan signifie savoir, magenta auto-test, jaune surligneur. Une encre n'emprunte jamais le rôle d'une autre : pas de magenta sur un contenu de synthèse, pas de cyan sur un score.",
+        "section": "colors"
+      },
+      {
+        "name": "The Texte Selon l'Encre Rule",
+        "body": "Sur cyan et sur jaune, le texte est toujours en encre ; sur magenta et sur encre, il est en papier. Le blanc sur cyan et le blanc sur jaune ne passent pas le contraste.",
+        "section": "colors"
+      },
+      {
+        "name": "The Le Jaune Ne S'écrit Pas Rule",
+        "body": "Le jaune n'est qu'un fond : surlignage, halo, aplat d'état. Jamais une couleur de texte, de trait ou d'icône.",
+        "section": "colors"
+      },
+      {
+        "name": "The Deux Largeurs Rule",
+        "body": "Archivo élargi pour ce qui se nomme (titres, numéros), Archivo condensé capitales pour ce qui s'annonce (bandeaux). Aucun autre usage d'Archivo, aucune autre largeur.",
+        "section": "typography"
+      },
+      {
+        "name": "The Chiffres en Archivo Rule",
+        "body": "Les nombres d'interface passent en Archivo tabulaire, car le zéro d'Atkinson est barré. Les milliers prennent une espace simple insécable et ne se coupent pas.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plat par Défaut Rule",
+        "body": "Rien n'a d'ombre au repos. L'ombre n'apparaît qu'au survol du bouton principal ; la hiérarchie se fait avec des aplats et des filets.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Coin Droit Rule",
+        "body": "Aucun arrondi sur une surface ou un contrôle. Un coin arrondi suffit à faire retomber l'interface dans la carte d'app d'étude que ce monde refuse.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do donner à chaque encre un seul rôle : cyan pour le savoir, magenta pour l'auto-test, jaune pour surligner.",
+      "Do ouvrir chaque rubrique par un bandeau en Archivo condensé (wdth 72) extra-gras en capitales, posé dans un aplat de l'encre de la rubrique.",
+      "Do mettre texte encre sur cyan et jaune, texte papier sur magenta et encre.",
+      "Do garder des coins droits (0 px) sur toute surface et tout contrôle.",
+      "Do structurer avec des filets noirs de 2 px et des filets doux d'1 px plutôt qu'avec des ombres.",
+      "Do composer les nombres d'interface en Archivo à chiffres tabulaires.",
+      "Do utiliser le halo jaune (contour encre de 2 px + 6 px de jaune) pour le focus clavier des boutons et des liens, et une bordure d'encre épaissie (1.5 px + 1 px) pour le focus des champs.",
+      "Do dessiner les icônes au trait de 2 px, extrémités carrées et angles vifs, en SVG en ligne.",
+      "Do utiliser la courbe de sortie cubic-bezier(0.16, 1, 0.3, 1) pour les mouvements, et les couper en mouvement réduit."
+    ],
+    "donts": [
+      "Don't utiliser la carte blanche arrondie avec accent indigo des apps d'étude.",
+      "Don't arrondir un coin, même de 2 px.",
+      "Don't écrire en jaune, ni poser du texte blanc sur cyan ou jaune.",
+      "Don't utiliser le magenta hors de l'auto-évaluation ni le cyan hors du savoir.",
+      "Don't ajouter d'ombre au repos ; seule l'ombre de survol du bouton principal existe.",
+      "Don't utiliser Archivo pour le texte de lecture, ni Atkinson pour les titres et bandeaux.",
+      "Don't poser une petite étiquette en capitales au-dessus d'un titre : le bandeau est le titre de la rubrique, pas un surtitre."
+    ]
+  }
+}
