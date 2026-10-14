@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Icone from "@/components/Icone";
 import ScoreFiche from "@/components/ScoreFiche";
-import { creerClientSupabase } from "@/lib/supabase";
+import type { StatutFiche } from "@/lib/fiche";
+import { creerClientServeur } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   title: "Mes fiches",
 };
 
-type LigneSommaire = { id: string; titre: string; created_at: string };
+type LigneSommaire = { id: string; titre: string; created_at: string; statut: StatutFiche };
 
 const FUSEAU = "Europe/Paris";
 
@@ -38,11 +39,27 @@ function regrouperParMois(fiches: LigneSommaire[]) {
   return groupes;
 }
 
+// Une fiche qui n'est pas prête le signale à la place du score
+function EtatFiche({ statut }: { statut: StatutFiche }) {
+  if (statut === "prete") return null;
+
+  return statut === "en_attente" ? (
+    <span className="ligne-attente bg-papier-2 px-2 py-0.5 font-sans text-[0.8125rem] font-bold text-encre-2">
+      En cours de génération
+    </span>
+  ) : (
+    <span className="bg-surligneur px-2 py-0.5 font-sans text-[0.8125rem] font-bold text-encre">
+      Échec
+    </span>
+  );
+}
+
 export default async function ListeFiches() {
-  const supabase = creerClientSupabase();
+  // Pas de filtre par auteur : la Row Level Security ne renvoie que les fiches de l'utilisateur
+  const supabase = await creerClientServeur();
   const { data: fiches, error } = await supabase
     .from("fiches")
-    .select("id, titre, created_at")
+    .select("id, titre, created_at, statut")
     .order("created_at", { ascending: false });
 
   const groupes = fiches ? regrouperParMois(fiches) : [];
@@ -103,7 +120,11 @@ export default async function ListeFiches() {
                   href={`/fiches/${fiche.id}`}
                   className="group grid grid-cols-[2.75rem_1fr] items-center gap-x-4 gap-y-1 py-4 no-underline sm:grid-cols-[3rem_1fr_auto] sm:gap-x-5"
                 >
-                  <span className="archivo-large row-span-2 flex size-11 items-center justify-center bg-essentiel text-lg font-extrabold tabular-nums transition-colors duration-200 group-hover:bg-encre group-hover:text-papier sm:row-span-1 sm:size-12">
+                  <span
+                    className={`archivo-large row-span-2 flex size-11 items-center justify-center text-lg font-extrabold tabular-nums transition-colors duration-200 group-hover:bg-encre group-hover:text-papier sm:row-span-1 sm:size-12 ${
+                      fiche.statut === "prete" ? "bg-essentiel" : "bg-papier-2 text-encre-3"
+                    }`}
+                  >
                     <span className="sr-only">Fiche n° </span>
                     {fiche.numero}
                   </span>
@@ -117,6 +138,7 @@ export default async function ListeFiches() {
                     />
                   </span>
                   <span className="chiffres flex items-center gap-3 text-sm text-encre-2">
+                    <EtatFiche statut={fiche.statut} />
                     <ScoreFiche idFiche={fiche.id} />
                     <time dateTime={fiche.created_at}>
                       {new Date(fiche.created_at).toLocaleDateString("fr-FR", {

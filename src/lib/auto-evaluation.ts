@@ -1,5 +1,5 @@
 // Auto-évaluation des questions, conservée dans le navigateur (localStorage).
-// Pas de compte utilisateur avant le TD2 : chaque appareil garde ses propres notes.
+// Les notes restent propres à chaque appareil : elles ne suivent pas le compte.
 
 export type Note = "su" | "revoir";
 export type NotesFiche = (Note | null)[];

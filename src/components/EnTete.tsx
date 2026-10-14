@@ -1,26 +1,20 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import BoutonDeconnexion from "@/components/BoutonDeconnexion";
+import NavigationPrincipale from "@/components/NavigationPrincipale";
+import { creerClientServeur } from "@/lib/supabase/server";
 
-const LIENS = [
-  { href: "/", libelle: "Nouvelle fiche" },
-  { href: "/fiches", libelle: "Mes fiches" },
-];
-
-function estActif(chemin: string, href: string) {
-  return href === "/" ? chemin === "/" : chemin.startsWith(href);
-}
-
-export default function EnTete() {
-  const chemin = usePathname();
+export default async function EnTete() {
+  const supabase = await creerClientServeur();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   return (
     <header className="sans-impression border-b-2 border-filet">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-8">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:gap-3 sm:px-8">
         <Link
           href="/"
-          className="group flex items-center gap-3 no-underline"
+          className="group flex items-center gap-2 no-underline min-[400px]:gap-3"
           aria-label="Revizator, accueil"
         >
           <span className="archivo-large text-lg font-extrabold tracking-tight min-[400px]:text-xl sm:text-2xl">
@@ -35,33 +29,28 @@ export default function EnTete() {
           </span>
         </Link>
 
-        <nav aria-label="Navigation principale">
-          <ul className="flex items-center gap-1 sm:gap-2">
-            {LIENS.map(({ href, libelle }) => {
-              const actif = estActif(chemin, href);
-              return (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    aria-current={actif ? "page" : undefined}
-                    className={`relative block px-2 py-2 text-[0.95rem] font-semibold whitespace-nowrap no-underline transition-colors sm:px-3 ${
-                      actif ? "text-encre" : "text-encre-2 hover:text-encre"
-                    }`}
-                  >
-                    {libelle}
-                    <span
-                      aria-hidden="true"
-                      className={`absolute inset-x-2 -bottom-[14px] h-1 bg-encre transition-transform duration-300 ease-sortie sm:inset-x-3 ${
-                        actif ? "scale-x-100" : "scale-x-0"
-                      }`}
-                    />
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+        {user && (
+          <div className="flex items-center gap-1 sm:gap-3">
+            <NavigationPrincipale />
+            <div className="hidden items-center gap-3 min-[420px]:flex sm:border-l sm:border-filet-doux sm:pl-3">
+              <span className="hidden max-w-56 truncate text-sm text-encre-2 xl:block">
+                {user.email}
+              </span>
+              <BoutonDeconnexion />
+            </div>
+          </div>
+        )}
       </div>
+
+      {/* Sous 420 px, la navigation occupe toute la ligne : le compte passe en dessous */}
+      {user && (
+        <div className="border-t border-filet-doux min-[420px]:hidden">
+          <div className="flex items-center justify-between gap-3 py-1 pr-1 pl-4 text-sm">
+            <span className="min-w-0 truncate text-encre-2">{user.email}</span>
+            <BoutonDeconnexion avecLibelle />
+          </div>
+        </div>
+      )}
     </header>
   );
 }

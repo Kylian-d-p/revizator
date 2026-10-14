@@ -21,15 +21,15 @@ La fiche est produite uniquement à partir du cours fourni, sans information ext
 ## Operating Context
 
 - Projet de cours (module cloud, série de TD) : TD1 pose l'app serverless + IA, TD2 ajoutera authentification et règles RLS, limitation de débit, génération asynchrone et import PDF, TD3 une pipeline CI (eslint).
-- Parcours actuels : `/` (titre + texte du cours → génération, puis fiche affichée en dessous), `/fiches` (liste par date), `/fiches/[id]` (détail d'une fiche).
-- La génération prend plusieurs secondes et peut échouer (quota 429, texte trop volumineux 413, délai 504, format 502, erreur d'enregistrement 500) ; chaque cas a déjà son message en français.
+- Parcours actuels : `/connexion` (lien magique par e-mail), `/` (titre + texte collé ou PDF → demande acceptée, génération en arrière-plan, fiche affichée en dessous dès qu'elle est prête), `/fiches` (liste par date, avec l'état de chaque fiche), `/fiches/[id]` (détail, PDF d'origine), `/admin` (état des services, réservé aux administrateurs).
+- La génération est asynchrone (file QStash + worker) : une fiche passe par « en attente », puis « prête » ou « erreur ». Refus possibles à la demande : session expirée 401, quota de 5 fiches par heure 429, PDF illisible 422, lancement impossible 503 ; chaque cas a son message en français.
 
 ## Capabilities and Constraints
 
 - Next.js 16.4 (App Router, `src/`, TypeScript, Tailwind v4), modèle via API compatible OpenAI (Groq), Supabase (table `fiches`, clé secrète côté serveur), déploiement Vercel.
 - Limites : titre 150 caractères max, texte entre 200 et 8000 caractères.
 - Les routes, l'API, la logique et les noms en français du TD (Fiche, genererFiche, LIMITES…) sont conservés, car les TD suivants s'appuient dessus. Le travail d'interface et l'expérience de révision côté front peuvent évoluer librement ; le back ne change pas.
-- Pas encore de comptes : toutes les fiches sont visibles par tous jusqu'au TD2.
+- Comptes depuis le TD2 (Supabase Auth, sans mot de passe) : chaque utilisateur ne voit que ses fiches (Row Level Security). L'auto-évaluation reste stockée dans le navigateur.
 
 ## Brand Commitments
 

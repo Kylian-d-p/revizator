@@ -38,6 +38,31 @@ const TRACES = {
       <path d="M4 3.5v5h5" />
     </>
   ),
+  sortie: (
+    <>
+      <path d="M10 4H4v16h6" />
+      <path d="M9 12h11m-4-4 4 4-4 4" />
+    </>
+  ),
+  telecharger: (
+    <>
+      <path d="M12 4v11m-5-5 5 5 5-5" />
+      <path d="M4 20h16" />
+    </>
+  ),
+  document: (
+    <>
+      <path d="M6 3h8l4 4v14H6z" />
+      <path d="M14 3v4h4" />
+      <path d="M9 12h6m-6 4h6" />
+    </>
+  ),
+  courrier: (
+    <>
+      <path d="M3 5h18v14H3z" />
+      <path d="m3 6 9 7 9-7" />
+    </>
+  ),
 } as const;
 
 export type NomIcone = keyof typeof TRACES;
