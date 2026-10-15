@@ -34,7 +34,9 @@ export default withSentryConfig(nextConfig, {
   // This can increase your server load as well as your hosting bill.
   // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
   // side errors will fail.
-  tunnelRoute: "/monitoring",
+  // En local, le proxy de Next.js qui relaie ce tunnel déclenche un MaxListenersExceededWarning
+  // à chaque envoi : le tunnel n'est donc activé qu'en production, là où les bloqueurs comptent.
+  tunnelRoute: process.env.NODE_ENV === "production" ? "/monitoring" : undefined,
 
   webpack: {
     // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
