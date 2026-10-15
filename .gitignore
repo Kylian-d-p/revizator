@@ -44,3 +44,6 @@ next-env.d.ts
 
 # Sentry Config File
 .env.sentry-build-plugin
+
+# Ancien .env.local, gardé de côté depuis le passage à Infisical
+.env.local.sauvegarde
