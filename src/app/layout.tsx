@@ -9,9 +9,14 @@ const archivo = Archivo({
   axes: ["wdth"],
 });
 
+// Next.js n'a pas les métriques d'Atkinson Hyperlegible Next pour calculer une police de
+// secours ajustée, et le signale à chaque compilation : on déclare donc la même pile de
+// secours que --font-sans (globals.css).
 const atkinson = Atkinson_Hyperlegible_Next({
   variable: "--font-atkinson",
   subsets: ["latin"],
+  fallback: ["ui-sans-serif", "system-ui", "sans-serif"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {

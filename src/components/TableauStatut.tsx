@@ -35,6 +35,7 @@ export default function TableauStatut() {
   const [donnees, setDonnees] = useState<ReponseStatut | null>(null);
   const [chargement, setChargement] = useState(true);
   const [erreur, setErreur] = useState("");
+  const [messageTest, setMessageTest] = useState("");
 
   function actualiser() {
     setChargement(true);
@@ -45,6 +46,20 @@ export default function TableauStatut() {
       })
       .catch(() => setErreur("Impossible de joindre la route de statut."))
       .finally(() => setChargement(false));
+  }
+
+  async function envoyerErreurTest() {
+    setMessageTest("Envoi…");
+    try {
+      const reponse = await fetch("/api/admin/erreur-test", { method: "POST" });
+      setMessageTest(
+        reponse.status === 500
+          ? "Erreur de test envoyée : elle doit apparaître dans Sentry d'ici quelques secondes."
+          : `Réponse inattendue (statut ${reponse.status}).`
+      );
+    } catch {
+      setMessageTest("Impossible de joindre la route d'erreur de test.");
+    }
   }
 
   useEffect(() => {
@@ -67,16 +82,28 @@ export default function TableauStatut() {
             État des services cloud dont dépend Revizator.
           </p>
         </div>
-        <button
-          type="button"
-          onClick={actualiser}
-          disabled={chargement}
-          className="bouton bouton-secondaire w-full sm:w-auto"
-        >
-          <Icone nom="recommencer" className="size-4" />
-          {chargement ? "Vérification…" : "Relancer les tests"}
-        </button>
+        <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
+          <button type="button" onClick={envoyerErreurTest} className="bouton bouton-secondaire">
+            <Icone nom="attention" className="size-4" />
+            Envoyer une erreur de test
+          </button>
+          <button
+            type="button"
+            onClick={actualiser}
+            disabled={chargement}
+            className="bouton bouton-secondaire"
+          >
+            <Icone nom="recommencer" className="size-4" />
+            {chargement ? "Vérification…" : "Relancer les tests"}
+          </button>
+        </div>
       </div>
+
+      {messageTest && (
+        <p role="status" className="mt-4 text-sm text-encre-2">
+          {messageTest}
+        </p>
+      )}
 
       {erreur && (
         <div role="alert" className="mt-10 flex gap-4 bg-surligneur-pale px-5 py-4 sm:px-6">
